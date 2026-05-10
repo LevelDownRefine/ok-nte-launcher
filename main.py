@@ -43,4 +43,6 @@ def wait_for_htgame():
 if __name__ == "__main__":
     # 如果游戏未启动，通过启动器启动并等待启动
     wait_for_htgame()
+    time.sleep(10) # 等待以免启动两个游戏进程
+    print("启动异环")
     subprocess.run([OKNTE_PATH, "-t 1", "-e"])
