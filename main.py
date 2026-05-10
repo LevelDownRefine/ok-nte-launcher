@@ -1,9 +1,17 @@
 import subprocess
 import psutil
 import time
+import os
+import sys
 
 # 修改为你的ok-nte.exe路径
 OKNTE_PATH = "D:\game_helper\ok-nte\ok-nte.exe"
+
+# select current directory as the working directory
+# ensure import and config can be found correctly
+current_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, current_dir)
+os.chdir(current_dir)
 
 def is_htgame_running():
     '''判断HTGame是否正在运行'''
