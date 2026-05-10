@@ -1,6 +1,8 @@
 # ok-nte-launcher
 该脚本用于配合[ok-nte](https://github.com/BnanZ0/ok-nte/)使用，用于打开异环启动器，并且启动异环
 
+如果未启动游戏 -> 启动启动器 -> 更新游戏 -> 开始游戏 -> 异环启动 -> 启动ok-nte
+
 安装依赖
 ```
 pip install -r requirements.txt
